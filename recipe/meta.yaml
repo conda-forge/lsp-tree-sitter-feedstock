@@ -1,4 +1,4 @@
-{% set version = "0.0.17" %}
+{% set version = "0.0.18" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lsp-tree-sitter/lsp_tree_sitter-{{ version }}.tar.gz
-  sha256: ba35219ee38a5c2e2d3e157c7e5dfd34a6edc351f47e5ee70bda9955b257c7fe
+  sha256: e0ddf15ca15ac97459b261dd698fd2cb8d0f0446d5421671ec380a9583c6528b
 
 build:
   number: 0

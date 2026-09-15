@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.6"
+  version: "0.2.17"
 
 package:
   name: lsp-tree-sitter
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lsp-tree-sitter/lsp_tree_sitter-${{ version }}.tar.gz
-  sha256: 7cb1b532ac475c2ddeb2e05cce3923b0ca9bb8858ec1f505211a15e99825ab44
+  sha256: 7801ee09cc39549f7280e31efb2b279cf03c141c45448295e630dddc7021c56f
 
 build:
   number: 0
@@ -22,8 +22,10 @@ requirements:
     - setuptools
     - setuptools-scm >=6.2
     - setuptools-generate >=0.0.6
+    - uv-build
     - pip
   run:
+    - jq.py
     - python >=${{ python_min }}
     - colorama
     - jinja2
@@ -47,7 +49,6 @@ about:
   license: GPL-3.0-or-later
   license_file:
     - LICENSE
-    - template/LICENSE
   homepage: https://github.com/neomutt/lsp-tree-sitter
   repository: https://github.com/neomutt/lsp-tree-sitter
 
